@@ -1,0 +1,17 @@
+{
+  "name": "event-management",
+  "version": "1.0.0",
+  "description": "## Description:  Build an event management system where users can create, browse, and RSVP to events. Implement features for event categorization, ticketing, and notifications. Use MongoDB for storing event details, user RSVPs, and notifications.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.13",
+    "express": "^4.21.0",
+    "mongoose": "^8.6.3"
+  }
+}
