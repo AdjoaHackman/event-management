@@ -19,7 +19,7 @@ router.post('/signup', async (req, res) => {
     try {
       console.log("signup attempt!")
       const userData = await User.create({
-        name: req.body.name,
+        username: req.body.username,
         email: req.body.email,
         password: req.body.password
       });
