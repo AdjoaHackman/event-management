@@ -7,6 +7,15 @@ const routes = require('./routes');
 const PORT = process.env.PORT || 3001;
 const app = express();
 
+// Set up sessions
+const sess = {
+  secret: 'Super secret secret',
+  resave: false,
+  saveUninitialized: true,
+};
+
+app.use(session(sess));
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use("/api", routes);
